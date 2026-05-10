@@ -13,6 +13,7 @@ const renderer = new THREE.WebGLRenderer({
   antialias: false,
   alpha: true,
   powerPreference: "high-performance",
+  preserveDrawingBuffer: true,
 });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.setSize(window.innerWidth, window.innerHeight);
